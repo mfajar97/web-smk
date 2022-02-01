@@ -4,12 +4,12 @@ function getDatabaseConfig(): array{
   return [
     "database" => [
       "test" => [
-        "url" => "mysql:host=localhost:3306;dbname=php_login_management_test",
+        "url" => "mysql:host=localhost:3306;dbname=db_web_smk_test",
         "username" => "root",
         "password" => ""
       ],
       "prod" => [
-        "url" => "mysql:host=localhost:3306;dbname=php_login_management",
+        "url" => "mysql:host=localhost:3306;dbname=db_web_smk",
         "username" => "root",
         "password" => ""
       ]  
