@@ -1,0 +1,98 @@
+@startuml
+entity User {
+   *user_id : VARCHAR
+   --
+
+   * user_name : VARCHAR
+   * user_password : VARCHAR
+   user_email : VARCHAR
+   user_jenkel : VARCHAR
+   user_alamat : VARCHAR
+   user_no_hp : INT
+   user_photo : VARCHAR
+}
+
+entity Berita {
+   * berita_id : VARCHAR
+   --
+
+   berita_judul : VARCHAR
+   berita_isi : VARCHAR
+   berita_tanggal : TIME
+   * berita_kategori_id : VARCHAR
+   * berita_kategori_nama : VARCHAR
+   berita_views : VARCHAR
+   berita_gambar : VARCHAR
+   * berita_user_id : VARCHAR
+   berita_author : VARCHAR
+   berita_img_slider : VARCHAR
+}
+
+entity Galeri {
+   * galeri_id : VARCHAR
+   --
+
+   galeri_judul : VARCHAR
+   galeri_tanggal : TIME
+   galeri_gambar : VARCHAR
+   * galeri_album_id : VARCHAR
+   * galeri_user_id : VARCHAR
+   galeri_author : VARCHAR
+}
+
+entity Files {
+   * file_id : VARCHAR
+   --
+
+   file_judul : VARCHAR
+   file_deskripsi : VARCHAR
+   file_tanggal : TIME
+   file_author : VARCHAR
+   file_download : VARCHAR
+   file_data : VARCHAR
+}
+
+entity Pengumuman {
+   * Pengumuman_id : VARCHAR
+   --
+
+   pengumuman_judul : VARCHAR
+   pengumuman_deskripsi : VARCHAR
+   pengumuman_tanggal : TIME
+   pengumuman_author : VARCHAR
+}
+
+entity Dataguru {
+   * dataguru_id : VARCHAR
+   --
+
+   dataguru_nip : VARCHAR
+   dataguru_nama : VARCHAR
+   dataguru_jenkel : VARCHAR
+   dataguru_tmp_lahir : VARCHAR
+   dataguru_tgl_lahir : VARCHAR
+   dataguru_mapel : VARCHAR
+   dataguru_photo : VARCHAR
+   dataguru_tgl_input: TIME
+}
+
+entity Inbox {
+   * inbox_id : VARCHAR
+   --
+
+   * inbox_nama : VARCHAR
+   inbox_email : VARCHAR
+   inbox_kontak : VARCHAR
+   inbox_pesan : VARCHAR
+   inbox_tanggal : TIME
+   inbox_status : VARCHAR
+}
+
+entity Youtube  {
+   * youtube_id : VARCHAR
+   --
+
+   youtube_link : VARCHAR
+   youtube_tanggal_upload : TIME
+}
+@enduml

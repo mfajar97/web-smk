@@ -1,0 +1,26 @@
+{
+	"name": "just-fajar/web-smk",
+	"description": "Belajar PHP MVC",
+	"type": "project",
+	"authors": [{
+		"name": "Muhammad Fajar",
+		"email": "fajarreal97@gmail.com"
+	}],
+	"require": {},
+	"require-dev": {
+		"phpunit/phpunit": "9.5.10",
+		"twbs/bootstrap": "5.1.3",
+		"almasaeed2010/adminlte": "3.0",
+		"mfajar97/eterna": "4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"JustFajar\\Belajar\\PHP\\MVC\\": "app"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"JustFajar\\Belajar\\PHP\\MVC\\": "test"
+		}
+	}
+}
